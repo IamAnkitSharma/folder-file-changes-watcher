@@ -16,5 +16,5 @@ setInterval(()=>{
 }, 1000);
 
 watcher.on('change', (path) => {
-  console.log('File', path, 'has changed');
+  console.log('File', path, 'has changed...');
 });
