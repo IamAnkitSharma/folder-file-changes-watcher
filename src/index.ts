@@ -11,6 +11,10 @@ const watcher = chokidar.watch(watchDir, {
   persistent: true
 });
 
+setInterval(()=>{
+  console.log('Watching for changes...');
+}, 1000);
+
 watcher.on('change', (path) => {
   console.log('File', path, 'has changed');
 });
