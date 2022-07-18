@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import chokidar from 'chokidar';
-import { logDateTime } from './date.util';
+import { getDateTime } from './date.util';
 
 const args = process.argv.slice(2);
 
@@ -13,7 +13,7 @@ const watcher = chokidar.watch(watchDir, {
 });
 
 setInterval(()=>{
-  console.log(`${logDateTime()} - Watching for changes...`);
+  console.log(`${getDateTime()} - Watching for changes...`);
 }, 1000);
 
 watcher.on('change', (path) => {
