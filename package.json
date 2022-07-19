@@ -12,7 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chokidar": "^3.5.3"
+    "chokidar": "^3.5.3",
+    "redis": "^4.2.0"
   },
   "devDependencies": {
     "@types/node": "^18.0.6",
